@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import ReactMarkdown from "react-markdown";
-// import remarkGfm from "remark-gfm";
-// import rehypeRaw from "rehype-raw"; 
+
 import "./about.css";
 import Link from "next/link";
 
@@ -12,7 +10,7 @@ const SingleBlogPage = ({ slug }) => {
     const res = await fetch(`/api/blogs?slug=${slug}`);
     const data = await res.json();
     setData(data);
-    console.log("DATA --> ", data);
+    console.log("DATA --> ", data.content);
   };
 
   useEffect(() => {
@@ -33,15 +31,9 @@ const SingleBlogPage = ({ slug }) => {
         {data.description}
       </p>
   
-      {/* <div className="prose prose-invert lg:prose-xl mb-6">
-       
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeRaw]} 
-        >
+      
           {data.content}
-        </ReactMarkdown>
-      </div> */}
+        
   
       <div className="flex flex-col lg:flex-row items-center justify-between">
         <div className="w-full lg:w-auto">

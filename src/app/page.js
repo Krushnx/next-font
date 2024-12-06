@@ -4,7 +4,7 @@ import './globals.css'
 import Project from '@/components/project/Project';
 import Experince from '@/components/experince/Experince';
 // import Contact from '@/components/contact/Contact';
-// import Testimonials from '@/components/testimonials/Testimonials';
+import Testimonials from '@/components/testimonials/Testimonials';
 // import PreFooter from '@/components/footer/PreFooter';
 // import Footer from '@/components/footer/Footer';
 
@@ -24,9 +24,9 @@ const Home = () => {
       <Project /> 
       <div className='smallLine'></div>
       <Experince />
-      <div className='smallLine'></div>{/*
-      <Testimonials />
       <div className='smallLine'></div>
+      <Testimonials />
+      <div className='smallLine'></div>{/*
       <Contact />
       <PreFooter />
       <Footer />  */}

@@ -18,6 +18,8 @@
     "random": "^5.1.1",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "sweetalert2": "^11.14.5",
     "tailwind-merge": "^2.5.5"
   },

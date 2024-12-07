@@ -38,7 +38,8 @@ module.exports = {
         'Title-2': '#e00000',
         'Border': '#212222',
         'tagBg-2': '#251b4a',
-        'neon-Green' : '#39FF14'
+        'neon-Green' : '#39FF14',
+        'hack' : 'rgb(18, 179, 0)'
       },
       fontFamily: {
         'custt': 'Pacifico',
@@ -57,6 +58,7 @@ module.exports = {
         'fantasy': ['Papyrus', 'fantasy'],
         'code': ['Source Code Pro', 'monospace'],
         'kanit': ['Kanit', 'sans-serif'],
+        'admin' : ["Kode Mono", 'monospace']
 
       },
     },

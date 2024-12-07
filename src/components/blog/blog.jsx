@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LikesComponent from "../apiTest/LikeComponents";
 import BlogCard from "./BlogCard";
+import Loader from "../loader/Loader";
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -18,6 +19,11 @@ function Blog() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  if (data.length ===0) {
+    return <div><Loader /></div>;
+  }
+
 
   return (
     <div className="md:mx-[45px] md:my-[0px] my-[30px] mx-[10px] ">

@@ -3,6 +3,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import "./about.css";
 import Link from "next/link";
+import Loader from "../loader/Loader";
 
 const SingleBlogPage = ({ slug }) => {
   const [data, setData] = useState(null);
@@ -27,7 +28,7 @@ const SingleBlogPage = ({ slug }) => {
   }, [slug]);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div><Loader /></div>;
   }
 
   return (
